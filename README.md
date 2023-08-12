@@ -25,9 +25,11 @@ Search by Name: Users can input a Pokémon's name and receive information about 
 Responsive Design: The web application is designed to provide a responsive experience across various devices and screen sizes.
 
 Usage
+
 Clone the repository to your local machine:
 
 bash
+
 Copy code
 git clone https://github.com/your-username/pokemon-search-web-app.git
 Navigate to the project directory.
