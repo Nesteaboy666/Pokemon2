@@ -1,0 +1,27 @@
+﻿h1 {
+	color:red;
+	font-size: 70px;
+	text-align:center;
+}
+
+body {
+color: black;
+}
+body {
+  background-color: rgba(139, 0, 0, 0.478);
+ 
+  }
+#myPokemon {
+	
+	 column-count: 4;
+}
+
+.text{
+font: size 40px;
+}
+
+li{
+	border : 3px groove purple;
+	background-color: powderblue;
+}
+

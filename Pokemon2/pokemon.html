@@ -1,0 +1,242 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>ECE 9065 Lab 1</title>
+<meta name="description" content="">
+<meta name="KE LI" content="">
+<link rel="stylesheet" href="pokemon.css">
+</head>
+<body>
+<!-- Place your content here -->
+<h1>POKEDEX</h1>
+
+<input type ="text" id ="myInputNum" onkeyup="searchNum()" placeholder =" Search by numbers" title="Type in a number">
+<button onclick = "searchNumber()">search</button>
+
+<input type ="text" id ="myInput" onkeyup="searchPokemon()" placeholder =" Search by names" title="Type in a name">
+<button onclick="searchName()">Search</button>
+
+<div id ="temp">
+</div>
+
+
+<ul id="myPokemon" style="list-style-type:none;">
+  <li>
+    <img src="pokemon/1.png" alt="p">
+    <p>001</p>
+    <p>Bulbasaur</p>
+    <p>pokemon type:grass, poison</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 4</p>
+    <p>pokemon evolution: 1</p>
+
+  </li>
+ 
+  <li>
+    <img src="pokemon/2.png" alt="p">
+    <p>002</p>
+    <p>Ivysaur</p>
+    <p>pokemon type:grass, poison</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 5</p>
+    <p>pokemon evolution: 2</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/3.png" alt="p">
+    <p>003</p>
+    <p>Venusaur</p>
+    <p>pokemon type:grass, poison</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 6</p>
+    <p>pokemon evolution: 3</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/4.png" alt="p">
+    <p>004</p>
+    <p>Charmander</p>
+    <p>pokemon type:fire</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 4</p>
+    <p>pokemon evolution: 1</p>
+  </li>
+
+  <li>
+    <img src="pokemon/5.png" alt="p">
+    <p>005</p>
+    <p>Charmeleon</p>
+    <p>pokemon type:fire</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 5</p>
+    <p>pokemon evolution: 2</p>
+  </li>
+ 
+
+  <li>
+    <img src="pokemon/6.png" alt="p">
+    <p>006</p>
+    <p>Charizard</p>
+    <p>pokemon type:fire, fly</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 6</p>
+    <p>pokemon evolution: 3</p>
+  </li>
+
+  
+  <li>
+    <img src="pokemon/7.png" alt="p">
+    <p>007</p>
+    <p>Squirtle</p>
+    <p>pokemon type:water</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 4</p>
+    <p>pokemon evolution: 1</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/8.png" alt="p">
+    <p>008</p>
+    <p>Wartortle</p>
+    <p>pokemon type:water</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 5</p>
+    <p>pokemon evolution: 2</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/9.png" alt="p">
+    <p>009</p>
+    <p>Blastoise</p>
+    <p>pokemon type:water</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 6</p>
+    <p>pokemon evolution: 3</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/10.png" alt="p">
+    <p>010</p>
+    <p>Caterpie</p>
+    <p>pokemon type:bug</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 1</p>
+    <p>pokemon evolution: 1</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/11.png" alt="p">
+    <p>011</p>
+    <p>Metapod</p>
+    <p>pokemon type:bug</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 3</p>
+    <p>pokemon evolution: 2</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/12.png" alt="p">
+    <p>012</p>
+    <p>Butterfree</p>
+    <p>pokemon type:bug, fly</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 4</p>
+    <p>pokemon evolution: 3</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/13.png" alt="p">
+    <p>013</p>
+    <p>Weedle</p>
+    <p>pokemon type:bug, poison</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 1</p>
+    <p>pokemon evolution: 1</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/14.png" alt="p">
+    <p>014</p>
+    <p>Kakuna</p>
+    <p>pokemon type:bug, poison</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 3</p>
+    <p>pokemon evolution: 2</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/15.png" alt="p">
+    <p>015</p>
+    <p>Beedrill</p>
+    <p>pokemon type:bug, poison</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 4</p>
+    <p>pokemon evolution: 3</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/16.png" alt="p">
+    <p>016</p>
+    <p>Pidgey</p>
+    <p>pokemon type:normal, fly</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 1</p>
+    <p>pokemon evolution: 1</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/17.png" alt="p">
+    <p>017</p>
+    <p>Pidgeotto</p>
+    <p>pokemon type:normal, fly</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 3</p>
+    <p>pokemon evolution: 2</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/18.png" alt="p">
+    <p>018</p>
+    <p>Pidgeot</p>
+    <p>pokemon type:normal, fly</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 4</p>
+    <p>pokemon evolution: 3</p>
+  </li>
+  
+  <li>
+    <img src="pokemon/19.png" alt="p" >
+    <p>019</p>
+    <p>Rattata</p>
+    <p>pokemon type:normal</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 1</p>
+    <p>pokemon evolution: 1</p>
+  </li>
+  
+
+  <li>
+    <img src="pokemon/20.png" alt="p">
+    <p>020</p>
+    <p>Raticate</p>
+    <p>pokemon type:normal</p>
+    <p>pokemon region: global</p>
+    <p>pokemon rarity: 4</p>
+    <p>pokemon evolution: 2</p>
+  </li>
+  
+</ul>
+
+<h2> Reference</h2>
+<p>1. Pokemon data set from https://www.kaggle.com/kvpratama/pokemon-images-dataset </p>
+<p>2.Pokemon excel from https://www.reddit.com/r/TheSilphRoad/comments/7p952h/pokemon_go_pokedex_spreadsheet/<p>
+
+  
+
+<!-- Embedded JavaScript go here -->
+
+<script src="lab.js"></script>
+<script src="pokemon.js"></script>
+</body>
+</html>
