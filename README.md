@@ -31,7 +31,7 @@ Clone the repository to your local machine:
 bash
 
 Copy code
-git clone https://github.com/your-username/pokemon-search-web-app.git
+https://github.com/Nesteaboy666/Pokemon2.git
 Navigate to the project directory.
 
 Open the index.html file in a web browser to access the Pokémon Search Web App.
